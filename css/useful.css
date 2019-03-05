@@ -1,0 +1,46 @@
+.h-20 {
+    height: 20px;
+}
+.h-40 {
+    height: 40px;
+}
+.mb-20 {
+    margin-bottom: 20px
+}
+.mt-15 {
+    margin-top: 10px;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-burgundy {
+    background-color: #a22741;
+}
+
+.bg-blue {
+    background-color: #c7f2e3;
+}
+
+.bg-cream {
+    background-color: #f8fcca;
+}
+
+.bg-deep-cream {
+    background-color: #e5cf96;
+}
+.bg-teal {
+    background-color: #089e9d;
+}
+
+.bg-mustard {
+    background-color: #ffd200;
+}
+
+.bg-pink {
+    background-color: #f857b5;
+}
+
+.bg-lime {
+    background-color: #cefc86;
+}

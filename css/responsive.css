@@ -1,0 +1,117 @@
+@media(min-width:768px) {
+    .hidden-md {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    nav .navbar-left {
+        float: left;
+    }
+
+    nav .navbar-right {
+        float: right;
+    }
+
+    .sidebar {
+        display: none
+    }
+    .hidden-md {
+        display: block;
+    }
+    .navbar-fixed-top {
+        padding: 8px 15px 5px 55px;
+    }
+    .toggle-wrap {
+        padding: 10px;
+        cursor: pointer;
+        float: left;
+        /*disable selection*/
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        position: absolute;
+        top: 35%;
+        left: 0;
+      }
+    .toggle-bar::before,
+    .toggle-bar::after {
+        content: "";
+        display: block;
+        background: #920825;
+        height: 5px;
+        width: 30px;
+        position: absolute;
+        top: -7px;
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -ms-transform-origin: 13%;
+        -webkit-transform-origin: 13%;
+        transform-origin: 13%;
+    }
+    .toggle-bar::after {
+      top: 4px;
+    }
+
+    .toggle-bar hr {
+        width: 30px;
+        position: absolute;
+        margin: 0;
+        margin-top: 6px;
+        height: 5px;
+        border-top: 0;
+        background-color: #920825;
+        opacity: 1;
+    }
+
+    .toggle-wrap.active hr {
+        display: none
+    }
+
+    .toggle-wrap.active .toggle-bar {
+      border-top: 6px solid transparent;
+    }
+    .toggle-wrap.active .toggle-bar::before {
+        -ms-transform: rotate(38deg);
+        -webkit-transform: rotate(38deg);
+        transform: rotate(38deg);
+        height: 6px;
+        top: -11px;
+    }
+    .toggle-wrap.active .toggle-bar::after {
+        -ms-transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+        transform: rotate(-40deg);
+    }
+
+    .main-content .page-content .dataTables_wrapper,
+    .main-content .page-content .dataTables_wrapper label {
+        width: 100%
+    }
+
+    .main-content {
+        margin-left: 0%;
+    }
+    .main-content .top-card .card {
+        margin-bottom: 45px;
+    }
+
+    table.dataTable>tbody>tr.child ul.dtr-details {
+        display: block;
+    }
+
+    .dtr-data {
+        float: right;
+    }
+
+    table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, 
+    table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+        background-color: #920825;
+        top: 9px;
+        left: 0px;
+    }
+}
